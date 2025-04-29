@@ -15,7 +15,7 @@ export function Background({ words }: BackgroundProps) {
                 Hello World, <br />I am <FlipWords words={words} />
             </h2>
                 <p className="max-w-lg sm:max-w-xl mx-auto text-xs sm:text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center pb-2 sm:pb-4 md:pb-6">
-                Hey! I'm just starting out as a Front-end Web Developer. I love creating cool, modern websites and learning new stuff. Right now, I'm focused on building my skills, trying new ideas, and having fun with coding.
+                Hey! I am just starting out as a Front-end Web Developer. I love creating cool, modern websites and learning new stuff. Right now, I am focused on building my skills, trying new ideas, and having fun with coding.
                 </p>
                 <Link
                     href="https://drive.google.com/file/d/1ehu46HyL2zMMq_VKniufcUBeK0U3vGaW/view?usp=sharing"

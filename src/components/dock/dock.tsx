@@ -4,11 +4,9 @@ import React from "react";
 import { FloatingDock } from "./floating-dock";
 import {
   IconBrandGithub,
-  IconBrandX,
   IconBrandInstagram,
   IconHome,
   IconSitemap,
-  IconBook2,
   IconBrandLinkedin
 } from "@tabler/icons-react";
 
