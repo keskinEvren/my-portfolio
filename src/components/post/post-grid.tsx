@@ -5,8 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "./use-outside-click";
 
 export function PostGrid() {
-  const [active, setActive] = useState<boolean | null>(null);
-
+  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+    null
+  );
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
@@ -219,3 +220,107 @@ export const CloseIcon = () => {
   );
 };
 
+const cards = [
+  {
+    description: "Shyness",
+    mood: "romo",
+    title: "Sharm-o-Haya",
+    src: "https://images.unsplash.com/photo-1568781269551-3e3baf5ec909?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ctaText: "View",
+    content: () => {
+      return (
+        <>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <i>~Ayuu</i>
+        </>
+      );
+    },
+  },
+  {
+    description: "Questioning",
+    mood: "sad",
+    title: "Abh Kyun Likhu",
+    src: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ctaText: "View",
+    content: () => {
+      return (
+        <>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <i>~Ayuu</i>
+        </>
+      );
+    },
+  },
+  {
+    description: "Sad",
+    mood: "sad",
+    title: "Dava-e-Lafz",
+    src: "https://images.unsplash.com/photo-1564934304050-e9bb87a29c13?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ctaText: "View",
+    content: () => {
+      return (
+        <>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <i>~Ayuu</i>
+        </>
+      );
+    },
+  },
+  {
+    description: "Romantic",
+    mood: "romo",
+    title: "She Can,But I Will",
+    src: "https://images.unsplash.com/photo-1517856713891-215e57a13c0d?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ctaText: "View",
+    content: () => {
+      return (
+        <>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          When life feels cold and still, I will be her warmth and her fire.
+And in every silent moment, I will fulfill her desire.
+          </p>  
+          <i>~Ayuu</i>
+        </>
+      );
+    },
+  },
+  {
+    description: "Missing",
+    mood: "sad",
+    title: "TU HAI HI NAHI",
+    src: "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ctaText: "View",
+    content: () => {
+      return (
+        <>
+          <p className="w-3/4">
+          </p>
+          <p className="w-3/4">
+          </p> 
+          <i>~Ayuu</i>
+        </>
+      );
+    },
+  },
+];
