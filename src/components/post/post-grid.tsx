@@ -5,9 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "./use-outside-click";
 
 export function PostGrid() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
-  );
+  const [active, setActive] = useState<boolean | null>(null);
+
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
